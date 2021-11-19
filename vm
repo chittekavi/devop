@@ -1,0 +1,50 @@
+{
+    "name": "vmdevelopment001",
+    "id": "/subscriptions/b514f69e-afe0-4e7f-a09a-b1e6c08b304c/resourceGroups/kavitha_rg_devop_msdn_001/providers/Microsoft.Compute/virtualMachines/vmdevelopment001",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "eastus",
+    "properties": {
+        "vmId": "115de389-6319-4ece-98ee-e9385006a854",
+        "availabilitySet": {
+            "id": "/subscriptions/b514f69e-afe0-4e7f-a09a-b1e6c08b304c/resourceGroups/kavitha_rg_devop_msdn_001/providers/Microsoft.Compute/availabilitySets/AS_001"
+        },
+        "hardwareProfile": {
+            "vmSize": "Standard_B4ms"
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "MicrosoftWindowsServer",
+                "offer": "WindowsServer",
+                "sku": "2022-datacenter-azure-edition",
+                "version": "latest"
+            },
+            "osDisk": {
+                "osType": "Windows",
+                "name": "vmdevelopment001_OsDisk_1_f0df8c11ea794f2d92e52ce7aa6e7e0f",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "id": "/subscriptions/b514f69e-afe0-4e7f-a09a-b1e6c08b304c/resourceGroups/KAVITHA_RG_DEVOP_MSDN_001/providers/Microsoft.Compute/disks/vmdevelopment001_OsDisk_1_f0df8c11ea794f2d92e52ce7aa6e7e0f"
+                }
+            },
+            "dataDisks": []
+        },
+        "osProfile": {
+            "computerName": "vmdevelopment00",
+            "adminUsername": "g7cr",
+            "windowsConfiguration": {
+                "provisionVMAgent": true,
+                "enableAutomaticUpdates": false
+            },
+            "secrets": []
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/b514f69e-afe0-4e7f-a09a-b1e6c08b304c/resourceGroups/kavitha_rg_devop_msdn_001/providers/Microsoft.Network/networkInterfaces/vmdevelopment001255"
+                }
+            ]
+        },
+        "provisioningState": "Succeeded"
+    }
+}
